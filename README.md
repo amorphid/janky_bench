@@ -1,11 +1,8 @@
 # JankyBench
 
-**TODO: Add description**
+JankyBench does janky benchmarking.  For robust benchmarking, you are in the wrong place :)
 
 ## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `janky_bench` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -15,7 +12,10 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/janky_bench](https://hexdocs.pm/janky_bench).
+## Documentation
 
+[https://hexdocs.pm/janky_bench](https://hexdocs.pm/janky_bench).
+
+## License
+
+[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
