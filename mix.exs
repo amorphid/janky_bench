@@ -1,28 +1,49 @@
 defmodule JankyBench.MixProject do
   use Mix.Project
 
-  def project do
-    [
-      app: :janky_bench,
-      version: "0.1.0",
-      elixir: "~> 1.8",
-      start_permanent: Mix.env() == :prod,
-      deps: deps()
-    ]
-  end
+  #######
+  # API #
+  #######
 
-  # Run "mix help compile.app" to learn about applications.
-  def application do
+  def application() do
     [
       extra_applications: [:logger]
     ]
   end
 
-  # Run "mix help deps" to learn about dependencies.
-  defp deps do
+  def project() do
+    [
+      app: :janky_bench,
+      deps: deps(),
+      description: description(),
+      # feel free to submit pull request w/ lower Elixir version 
+      elixir: "~> 1.8",
+      package: package(),
+      start_permanent: Mix.env() == :prod,
+      version: "0.1.0"
+    ]
+  end
+
+
+  ###########
+  # Private #
+  ###########
+
+  defp deps() do
     [
       # documentation generator
       {:ex_doc, ">= 0.0.0"}
+    ]
+  end
+
+  defp description() do
+    "JankyBench does janky benchmarking.  For robust benchmarking, you are in the wrong place :)"
+  end
+
+  defp package() do
+    [
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/amorphid/janky_bench"}
     ]
   end
 end
